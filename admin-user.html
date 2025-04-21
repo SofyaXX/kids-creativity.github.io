@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Центр детского творчества</title>
+</head>
+<body>
+    <header class="header">
+<div class="container flex header-container">
+    <a href="admin.html" class="header-logo">
+        <div class="tur-tur">
+            <img src="img/icons8-гараж-закрыт-64.png" alt="">
+        </div>
+       <p class="header-logo"  style="margin-left: 10px;" alt="logo"> Центр Детского Творчества</p>  
+    </a>
+    <nav class="header-nav">
+        <ul class="list-reset header-list list-reset flex"> 
+            
+            <li class="header-list-item"><a href="admin.html" class="header-link">Главная</a></li>
+            <li class="header-list-item"><a href="admin-new.html" class="header-link">Новости</a></li>
+            <li class="header-list-item"><a href="admin-user.html" class="header-link">Пользователи</a></li>
+
+            <div class="icon">
+           
+                <a href="profil.html">   <img src="img/icons8-пользователь-мужчина-в-кружке-64.png" class="basket" style="width: 40px; height: 40px; margin-top: -15px;"> </a> 
+                </div>
+         
+        </ul>
+    </nav>
+</div>
+    </header>
+    
+    
+    
+    <div class="div" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+
+    <div class="divasdas" style="display: flex; flex-direction: column; justify-content: center;">
+        <button class="create-teacher" id="toggleButton1">Добавить педагога</button>
+        <button class="create-student" id="toggleButton2">Добавить обучающегося</button>
+
+
+        <div class="inrutyvreg" id="inrutyvreg" style="display: none;">
+
+        <form action="admin-user.html">
+        <p class="login_text">Логин:</p>
+        <input type="text" name="login" minlength="2" maxlength="50" required class="inp1-log" id="logg">
+        <p class="parol_text">Пароль:</p>
+        <input type="password" minlength="2" maxlength="50" required class="inp1-log"  id="logg">
+        <p class="parol_text">ФИО:</p>
+        <input type="text" minlength="2" maxlength="80" required class="inp1-log"  id="logg">
+        <p class="parol_text">Телефон:</p>
+        <input type="tel" name="phone" pattern="^\+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}$" required class="inp1-log"  id="logg">
+        <p class="parol_text">Электронная почта:</p>
+        <input type="email" minlength="2" maxlength="50" required class="inp1-log"  id="logg">
+        <div class="div">
+
+        <div class="disadv" style="display: flex;flex-direction: column;justify-content: center;align-items: center;"> <a href="admin-user.html">  <button  id="logg" style="margin-left: -50px;" class="zaregistrir">Добавить</button></a></div>
+       
+    </form>      
+        </div>
+    </div>
+</div>
+
+
+<script>
+  const inrutyvreg = document.getElementById('inrutyvreg');
+
+function toggleDiv() {
+    if (inrutyvreg.style.display === 'none') {
+        inrutyvreg.style.display = 'block'; 
+    }
+}
+
+document.getElementById('toggleButton1').addEventListener('click', toggleDiv);
+document.getElementById('toggleButton2').addEventListener('click', toggleDiv);
+    
+
+
+    function validate_form(){
+            if (document.getElementById("logg").value==""||
+        document.getElementById("pass").value==""){
+            alert("Пожалуйста, заполните все поля");
+            return;
+        }
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Центр детского творчества</title>
+</head>
+<body>
+    <header class="header">
+<div class="container flex header-container">
+    <a href="student.html" class="header-logo">
+        <div class="tur-tur">
+            <img src="img/icons8-гараж-закрыт-64.png" alt="">
+        </div>
+       <p class="header-logo"  style="margin-left: 10px;" alt="logo"> Центр Детского Творчества</p>  
+    </a>
+    <nav class="header-nav">
+        <ul class="list-reset header-list list-reset flex"> 
+            
+            <li class="header-list-item"><a href="student.html" class="header-link">Главная</a></li>
+            <li class="header-list-item"><a href="katalog.html" class="header-link">Расписание</a></li>
+            <li class="header-list-item"><a href="#join-us" class="header-link">Занятия</a></li>
+            <li class="header-list-item"><a href="dop-inf.html" class="header-link">Дополнительное образование</a></li>
+
+            <div class="icon">
+           
+                <a href="profil.html">   <img src="img/icons8-пользователь-мужчина-в-кружке-64.png" class="basket" style="width: 40px; height: 40px; margin-top: -15px;"> </a> 
+                </div>
+         
+        </ul>
+    </nav>
+</div>
+    </header>
+    <main class="main">
+<section id="hero" class="hero">
+<div class="container">
+<div class="hero-content flex">
+<h1 class="hero-title">Центр детского <br>творчества — место, где <br>мечты становятся реальностью!</h1>
+<p class="hero-descr">У нас вы найдете разнообразные занятия: от художественных мастер-классов до спортивных секций и научных кружков. Присоединяйтесь к нам, и пусть каждый день станет шагом к новым открытиям и достижениям!</p>
+
+<div class="hero-wrapper">
+
+<a href="#join-us"><button class="btn-reset btn hero-btn" style="width: 300px;">ОСТАВИТЬ ЗАЯВКУ</button></a>
+
+</div>
+</div>
+</div>
+
+</section>
+
+    <section id="articles" class="articles section-offset">
+        <div class="container">
+            <h2 class="section-title articles-title">
+                Новости и мероприятия
+            </h2>
+            <ul class="list-reset articles-list flex">
+              <a href="#join-us"> <li class="articles-item">
+                    <article class="blog-preview flex">
+                        <img src="img/1лллл.jpg" alt="blog photo 1" class="blog preview-image" style="width: 180px; height:180px;">
+                        <div class="blog-preview-text">
+                            
+                            <h3 class="blog-preview-title">
+                                Техника живописи сухой кистью
+                            </h3>
+                            <p class="blog-preview-descr">
+                                Ее использовали китайские художники при написании пейзажей с кистями... 
+                            </p>
+                        </div>
+                    </article>
+                </li></a> 
+                <li class="articles-item">  <a href="#join-us">
+                    <article class="blog-preview flex">
+                        <img src="img/1ввввв.jpg" alt="blog photo 2" class="blog preview-image" style="width: 180px; height:180px;">
+                        <div class="blog-preview-text">
+                           
+                            <h3 class="blog-preview-title">
+                                Идеи для создания рисунковы
+                            </h3>
+                            <p class="blog-preview-descr">
+                                Один из самых простых приемов работы с меловой пастелью — это просто начать..
+                            </p>
+                        </div>
+                    </article>
+                </li></a>
+                <li class="articles-item">  <a href="#join-us">
+                    <article class="blog-preview flex">
+                        <img src="img/пппппп.jpg" alt="blog photo 2" class="blog preview-image" style="width: 180px; height:180px;">
+                        <div class="blog-preview-text">
+                            
+                            <h3 class="blog-preview-title">
+                                Конкурс по программированию
+                            </h3>
+                            <p class="blog-preview-descr">
+                                Скорее регистрируйтесь на наше новое мероприятие, учавствуйте и получайте призы!
+                            </p>
+                        </div>
+                    </article>
+                </li></a>
+                <li class="articles-item"> <a href="#join-us">
+                    <article class="blog-preview flex">
+                        <img src="img/ггггг.jpg" alt="blog photo 4" class="blog preview-image" style="width: 180px; height:180px;">
+                        <div class="blog-preview-text">
+                           
+                            <h3 class="blog-preview-title">
+                                Мастер-класс
+                            </h3>
+                            <p class="blog-preview-descr">
+                                Записывайтесь на новый мастер-класс и окунитесь в изучение истории...
+                            </p>
+                        </div>
+                    </article>
+                </li> </a>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="join-us" class="join-us section-offset" style="margin-top: -50px; margin-bottom: -50px; height: 600px;">
+        <div class="container">
+    <h2 class="section-title join-us-title">Оставьте заявку</h2>
+    <p class="section-descr join-us-descr">
+       Оставьте свою заявку на посещение мероприятия, и мы свяжемся с вами!
+    </p>
+    <form action="https:jsonplaceholder.typicode.com/posts" method="POST" class="form">
+        <div class="form-top">
+    <div class="form-left">
+    <input class="form-input" type="text" name="name" placeholder="Имя" required>
+    <input class="form-input" type="email" name="email" placeholder="E-mail" required>
+    <input class="form-input" type="tel" name="phone" placeholder="Телефон" required>
+    <select class="form-select" name="country" id="#">
+    <option value="Country" disabled selected>Мероприятие</option>
+    <option value="United Kingdom">Конкуст по литературе</option>
+    <option value="United States">Мастер-класс гончарного дела</option>
+    <option value="France">Конкурс</option>
+    <option value="Spain">Курсы программирования</option>
+    <option value="Spain">Кружок дополнительног образования (Шахматы)</option>
+    <option value="Spain">Кружок дополнительног образования (Английский язык)</option>
+    <option value="Spain">Кружок дополнительног образования (История и культура)</option>
+    <option value="Spain">Кружок дополнительног образования (Программирование)</option>
+    <option value="Spain">Кружок дополнительног образования (Каратэ)</option>
+    <option value="Spain">Кружок дополнительног образования (Современные танцы)</option>
+    <option value="Spain">Кружок дополнительног образования (Бальные танцы)</option>
+    <option value="Spain">Кружок дополнительног образования (Хоровое пение)</option>
+    <option value="Spain">Кружок дополнительног образования (Рисование и живопись)</option>
+    <option value="Spain">Кружок дополнительног образования (Скульптура и лепка)</option>
+    <option value="Spain">Кружок дополнительног образования (Фотография)</option>
+    </select>
+    
+    </div>
+    <div class="form-right">
+        <textarea class="form-textarea" name="comment" placeholder="Комментарий"></textarea>
+        </div>
+        </div>
+        <div class="form-bottom">
+    <div class="form-wrapper">
+    <button class="btn1 btn-reset form-btn">Отправить</button>
+    <label class="form-check">
+    <input type="checkbox" required>
+    Я согласен на <a href="#">обработку персональных данных</a>
+    </label>
+    </div>
+        </div>
+            
+    </form>
+        </div>
+        </section>
+
+
+<div class="kasda" style="margin-top: 30px;">
+        <section id="contacts" class="contacts section-offset">
+            <div class="container">
+                <h2 class="section-title contacts-title" style="margin-top: -40px;">
+                    Контакты
+                </h2>
+                <address class="contacts-address" >
+                    <ul class="list-reset contacts-list flex">
+                        <li class="contacts-item flex contacts-item-address">
+                            <strong class="contacts-item-caption">
+                                Наш офис
+                            </strong>
+                            <p class="contacts-item-text">
+                                Улица Фантазийная, дом 13, офис 42, город Мечта.
+                            </p>
+                        </li>
+                        <li class="contacts-item flex contacts-item-call" >
+                            <strong class="contacts-item-caption">
+                                Связь с нами
+                            </strong>
+                            <a href="tel:+79876543210" class="contacts-item-link">
+                                +7 (987) 654-32-10
+                            </a>
+                            <a href="tel:+71234567890" class="contacts-item-link">
+                                +7 (123) 456-78-90
+                            </a>
+                        </li>
+                        <li class="contacts-item flex contacts-item-mail">
+                            <strong class="contacts-item-caption">
+                                Наша почта
+                            </strong>
+                            <a href="mailto:example@example.com" class="contacts-item-link">
+                                example@example.com
+                            </a>
+                            <a href="mailto:support@example.com" class="contacts-item-link">
+                                support@example.com
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </section></div>
+            </main>
+    
+
+
+
+
+        <footer class="footer">
+            <div class="container flex footer-container">
+                <div class="footer-left flex">
+                    <a href="student.html" class="header-logo">
+                        <div class="tur-tur">
+                            <img src="img/icons8-гараж-закрыт-64.png" alt="">
+                        </div>
+                       <p class="header-logo12"   alt="logo"> TravelCompany</p>  
+                    </a>
+                    <small class="footer-copy">
+                        Copyright &copy;2017. All Right Reserved
+                    </small>
+                </div>
+                <div class="footer-right flex">
+                    <nav class="footer-nav">
+                        <ul class="list-reset footer-list flex">
+                            <li class="footer-item">
+                                <a href="student.html" target="_blank" class="footer-link">Главная</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="katalog.html" target="_blank" class="footer-link">Расписание</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#join-us" target="_blank" class="footer-link">Занятия</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="dop-inf.html" target="_blank" class="footer-link">Дополнительное образование</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="list-reset social flex">
+                        <li class="social-item"><a href="#" class="social-link social-link-tw"></a></li>
+                        <li class="social-item"><a href="#" class="social-link social-link-linkedin"></a></li>
+                        <li class="social-item"><a href="#" class="social-link social-link-mail"></a></li>
+                    </ul>
+                </div>
+            </div>
+            </footer>
+            </body>
+            </html>
+    

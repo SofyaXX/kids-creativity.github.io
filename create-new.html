@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Центр детского творчества</title>
+</head>
+<body>
+    <header class="header">
+<div class="container flex header-container">
+    <a href="teacher.html" class="header-logo">
+        <div class="tur-tur">
+            <img src="img/icons8-гараж-закрыт-64.png" alt="">
+        </div>
+       <p class="header-logo"  style="margin-left: 10px;" alt="logo"> Центр Детского Творчества</p>  
+    </a>
+    <nav class="header-nav">
+        <ul class="list-reset header-list list-reset flex"> 
+            
+            <li class="header-list-item"><a href="teacher.html" class="header-link">Главная</a></li>
+            <li class="header-list-item"><a href="katalog.html" class="header-link">Расписание</a></li>
+            <li class="header-list-item"><a href="index.html#join-us" class="header-link">Занятия</a></li>
+            <li class="header-list-item"><a href="dop-inf.html" class="header-link">Дополнительное образование</a></li>
+
+            <div class="icon">
+           
+                <a href="profil.html">   <img src="img/icons8-пользователь-мужчина-в-кружке-64.png" class="basket" style="width: 40px; height: 40px; margin-top: -15px;"> </a> 
+                </div>
+         
+        </ul>
+    </nav>
+</div>
+    </header>
+
+    <section id="join-us" class="join-us section-offset" style="margin-top: -50px; margin-bottom: -50px; height: 600px;">
+        <div class="container">
+    <h2 class="section-title join-us-title">Создайте новость или добавьте информацию о новом мероприятии!</h2>
+    <p class="section-descr join-us-descr">
+        Ваша новость или информация будет опубликована на главной странице в течении часа, после модерации!
+     </p>
+    <form action="https:jsonplaceholder.typicode.com/posts" method="POST" class="form">
+        <div class="form-top">
+    <div class="form-left">
+    <input class="form-input" type="text" name="name" placeholder="Введите заголовок" required>
+    <select class="form-select" name="country" id="#">
+    <option value="Country" disabled selected>Новость</option>
+    <option value="United Kingdom">Конкуст по литературе</option>
+    <option value="United States">Мастер-класс гончарного дела</option>
+    <option value="France">Конкурс</option>
+    <option value="Spain">Курсы программирования</option>
+    <option value="Spain">Кружок дополнительног образования (Шахматы)</option>
+    <option value="Spain">Кружок дополнительног образования (Английский язык)</option>
+    <option value="Spain">Кружок дополнительног образования (История и культура)</option>
+    <option value="Spain">Кружок дополнительног образования (Программирование)</option>
+    <option value="Spain">Кружок дополнительног образования (Каратэ)</option>
+    <option value="Spain">Кружок дополнительног образования (Современные танцы)</option>
+    <option value="Spain">Кружок дополнительног образования (Бальные танцы)</option>
+    <option value="Spain">Кружок дополнительног образования (Хоровое пение)</option>
+    <option value="Spain">Кружок дополнительног образования (Рисование и живопись)</option>
+    <option value="Spain">Кружок дополнительног образования (Скульптура и лепка)</option>
+    <option value="Spain">Кружок дополнительног образования (Фотография)</option>
+    </select>
+    
+    </div>
+    <div class="form-right">
+        <textarea class="form-textarea" name="comment" placeholder="Введите текст новости или информацию о мероприятии"></textarea>
+        </div>
+        </div>
+        <div class="form-bottom">
+    <div class="form-wrapper">
+    <button class="btn1 btn-reset form-btn">Отправить</button>
+    <label class="form-check">
+    <input type="checkbox" required>
+    Я согласен на <a href="#">обработку персональных данных</a>
+    </label>
+    </div>
+        </div>
+            
+    </form>
+        </div>
+        </section>
+
+
+</body>
+</html>

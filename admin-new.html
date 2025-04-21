@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Центр детского творчества</title>
+</head>
+<body>
+    <header class="header">
+<div class="container flex header-container">
+    <a href="admin.html" class="header-logo">
+        <div class="tur-tur">
+            <img src="img/icons8-гараж-закрыт-64.png" alt="">
+        </div>
+       <p class="header-logo"  style="margin-left: 10px;" alt="logo"> Центр Детского Творчества</p>  
+    </a>
+    <nav class="header-nav">
+        <ul class="list-reset header-list list-reset flex"> 
+            
+            <li class="header-list-item"><a href="admin.html" class="header-link">Главная</a></li>
+            <li class="header-list-item"><a href="admin-new.html" class="header-link">Новости</a></li>
+            <li class="header-list-item"><a href="admin-user.html" class="header-link">Пользователи</a></li>
+
+            <div class="icon">
+           
+                <a href="profil.html">   <img src="img/icons8-пользователь-мужчина-в-кружке-64.png" class="basket" style="width: 40px; height: 40px; margin-top: -15px;"> </a> 
+                </div>
+         
+        </ul>
+    </nav>
+</div>
+    </header>
+    <div class="divxxx" style="display: flex; justify-content: center; margin-top: 20px;">
+        <h2>Меропрития</h2>
+    </div>
+    
+    <div class="container-vse23" style="margin-top: -30px;">
+        <div class="spisok-card">
+        
+    
+
+         <div class="Card-inf" >
+              <div class="fon-inf">
+    
+                <form>
+                    <input type="file" id="imageInput" accept="image/*">
+                    <br><br>
+                    <img id="preview" src="" alt="Preview" style="display: none; max-width: 300px; max-height: 300px;">
+                </form>
+                
+                <script>
+                    const imageInput = document.getElementById('imageInput');
+                    const preview = document.getElementById('preview');
+                
+                    imageInput.addEventListener('change', function(event) {
+                        const file = event.target.files[0];
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.onload = function(e) {
+                                preview.src = e.target.result;
+                                preview.style.display = 'block'; // Показываем изображение
+                            }
+                            reader.readAsDataURL(file);
+                        }
+                    });
+                </script>
+            </div>
+              <div class="Card-niz">
+                     <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold;">Мастер-класс по гончарному искусству</p> 
+                     <p style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;"> Приглашаем вас на увлекательный мастер-класс по гончарному делу! Это уникальная возможность погрузиться в мир керамического искусства и создать собственные произведения. Вместе с опытным мастером вы узнаете о технологии обработки глины, научитесь различным техникам лепки и познаете основы глазурования.
+                    </p> 
+<div class="asdsas" style="display: flex; flex-direction: row; justify-content: center;">
+
+    <button class="good" style="width: 30px;height: 30px; margin-right: 20px;"><img src="img/icons8-галочка-48.png"></button>
+                    <button class="bad" style="width: 30px;height: 30px;"><img src="img/icons8-крестик-48.png"></button>
+</div>
+                
+              </div>
+                        
+         </div>
+
+
+
+    <div class="Card-inf" >
+              <div class="fon-inf">
+    
+                <form>
+                    <input type="file" id="imageInput" accept="image/*">
+                    <br><br>
+                    <img id="preview" src="" alt="Preview" style="display: none; max-width: 300px; max-height: 300px;">
+                </form>
+            </div>
+            <div class="Card-niz">
+                   <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold;">Мастер-класс по актерскому мастерству</p> 
+                   <p style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;"> Приглашаем вас на захватывающий мастер-класс по актерскому мастерству! Это уникальная возможность развить свои ораторские навыки, уверенность и креативность в игре на сцене. Под руководством опытного педагога-актера вы познакомитесь с основами актерской игры, освоите техники импровизации и развития персонажа, а также научитесь завораживать публику своим исполнением.
+                  </p> 
+
+                  <div class="asdsas" style="display: flex; flex-direction: row; justify-content: center;">
+
+                    <button class="good" style="width: 30px;height: 30px; margin-right: 20px;"><img src="img/icons8-галочка-48.png"></button>
+                                    <button class="bad" style="width: 30px;height: 30px;"><img src="img/icons8-крестик-48.png"></button>
+                </div>
+            </div>
+                      
+       </div>
+        
+        </div>
+        </div>
+
+        <div class="divxxx" style="display: flex; justify-content: center; margin-top: 20px;">
+            <h2>Новости</h2>
+        </div>
+        <div class="container-vse23" style="margin-top: -30px;">
+            <div class="spisok-card">
+        <div class="Card-inf" style="height: 250px;">
+       
+            <div class="Card-niz" style="margin-left: 40px; width: 800px;">
+                   <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: bold;">Важно!</p> 
+                   <p style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;"> 15 апреля занятия по жиповиси и рисунку у Шмидт Надежды Игоревны будут отменены. </p> 
+
+                   <div class="asdsas" style="display: flex; flex-direction: row; justify-content: center;">
+
+                    <button class="good" style="width: 30px;height: 30px; margin-right: 20px;"><img src="img/icons8-галочка-48.png"></button>
+                                    <button class="bad" style="width: 30px;height: 30px;"><img src="img/icons8-крестик-48.png"></button>
+                </div>
+            </div>
+                      
+       </div>
+            </div>
+        </div>
+
+</body>
+</html>
